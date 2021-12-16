@@ -50,7 +50,6 @@ function Snake() {
 
     // draw a border around the canvas
     function clear_board() {
-
       snakeBoarder.fillStyle = boardBg;
       snakeBoarder.strokestyle = boardColor;
       snakeBoarder.fillRect(0, 0, snakeboard.width, snakeboard.height);
@@ -83,11 +82,8 @@ function Snake() {
       return hitLeftWall || hitRightWall || hitToptWall || hitBottomWall
     }
 
-    // Defing BG grind
 
-
-  // keypress func. not work like this, we need keycode to use keypress event
-
+    // keypress func. not work like this, we need keycode to use keypress event
     function change_direction(event) {
       const LEFT_KEY = 65; //     if (keypress === 'a') this.move('left');
       const RIGHT_KEY = 68;   //     if (keypress === 'd') this.move('right');
