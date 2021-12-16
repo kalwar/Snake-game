@@ -27,20 +27,6 @@ function Snake() {
     // Vertical velocity
     let dy = 0;
 
-
-    // Calling this func. repeatedly to keep the game running
-    function main() {
-        if (has_game_ended()) return;
-        changingDirection = false;
-        setTimeout(function onTick() {
-        clear_board();
-        move_snake();
-        drawSnake();
-        // Call main again
-        main();
-      }, 100)
-    }
-
     // Show game on canvas
     const snakeboard = document.getElementById("CanvasScreen");
     const snakeBoarder = snakeboard.getContext("2d");
